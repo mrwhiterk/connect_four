@@ -5,6 +5,7 @@
 body {
   font-family: sans-serif;
   margin: 0;
+  background-color: lightblue;
 }
 
 h1 {
@@ -26,7 +27,8 @@ header {
 }
 
 .cell {
-  border: 1px solid black;
+  border: 5px solid yellow;
+  background-color: lightblue;
   text-align: center;
 }
 
