@@ -17,7 +17,6 @@ let column7 = column6.map(x => x + 1)
 
 var divArray = document.querySelectorAll(".cell");
 
-// how close to bottom
 var column1position = 0
 var column2position = 0
 var column3position = 0
@@ -30,7 +29,6 @@ for (let i = 0; i < cells.length; i++) {
   cells[i].innerText = i
   cells[i].addEventListener('click', (evt) => {
 
-
     var match = findColumn(evt.target);
 
     if (isPlayerOne) {
@@ -39,16 +37,13 @@ for (let i = 0; i < cells.length; i++) {
       match.style.backgroundColor = "green";
     }
     isPlayerOne = !isPlayerOne;
-    column1bottom.style.pointerEvents = "none";
-
-
+    match.style.pointerEvents = "none";
   });
 }
 
 resetBtn.addEventListener('click', (evt) => {
   evt.preventDefault();
   for (let i = 0; i < cells.length; i++) {
-    cells[i].style.backgroundColor = "lightblue";
     cells[i].style.pointerEvents = "auto";
     isPlayerOne = true;
   }

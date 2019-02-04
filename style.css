@@ -30,6 +30,7 @@ header {
   border: 5px solid yellow;
   background-color: lightblue;
   text-align: center;
+  text-indent: -9999px;
 }
 
 footer {
