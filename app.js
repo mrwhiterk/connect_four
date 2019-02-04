@@ -45,7 +45,16 @@ resetBtn.addEventListener('click', (evt) => {
   evt.preventDefault();
   for (let i = 0; i < cells.length; i++) {
     cells[i].style.pointerEvents = "auto";
+    cells[i].style.backgroundColor = "lightblue";
     isPlayerOne = true;
+
+    column1position = 0
+    column2position = 0
+    column3position = 0
+    column4position = 0
+    column5position = 0
+    column6position = 0
+    column7position = 0
   }
 });
 
